@@ -1,0 +1,10 @@
+import xmlrpc.client
+
+server =xmlrpc.client.Server("http://localhost:8080")
+
+str1 = input("Enter first string value")
+str2 = input("Enter second string value")
+
+result = server.concatf(str1, str2)
+
+print(f"concate result: {result}")
